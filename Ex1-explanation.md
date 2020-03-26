@@ -3,11 +3,12 @@
 ## Object-readText
 
 - Objects are non-primitve data type.
-- Use `{}` to define an object
+- Use `{}` to define an object also known as Object Literal
 - Objects are collection of `key` and `value` pair seperated by comma.
 - `key` and `value` is seperated by `:`
 - `value` can be primitive or non-primitive data types.
 - Objects are mutable (can be changed)
+- Object does not retain the order you defined the keys
 
 Example:
 
@@ -155,3 +156,28 @@ let starks = ["Arya", "Sansa", "Rob", "Bran"];
 // accessing values
 starks[0]; // "Arya"
 ```
+
+### Primitive vs Non-Primitive
+
+**Primitive values are Immutable but Non-Primitive are mutable in nature.**
+
+Example (Immutable): Applies to all primitive types
+
+```js
+let num = 21;
+num = 30;
+```
+
+In above code you can see you are changing the value of `num` variable from 21 to 30. THe whole value is changed.
+
+```js
+let user = {
+  age: 21,
+  name: "John"
+};
+user.age = 32;
+```
+
+In above code you can see you changed the value of `name` key of `user` object from 21 to 32. But the object assigned to `user` remained same. Means object can be mutated (changed).
+
+## copy by value vs copy by reference-readText

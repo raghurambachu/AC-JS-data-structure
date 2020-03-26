@@ -5,17 +5,41 @@
 Follow the instruction and write code just below the instruction.
 
 - Create a variable named `character` using `let` and assign a value of blank object to it.
-- Go to this [link](https://awoiaf.westeros.org/index.php/List_of_characters) and choose any charactor you like and click on the link. For example [Arya Stark](https://awoiaf.westeros.org/index.php/Arya_Stark)
-- Re-assign the value of `charator` variable to and object with the key `charatorName` and value of the first name of your charactor. example "Arya"
-- Add a new key named `surName` with the vlaue of the surname of the cahractor i.e "Stark"
 
-````js
-// your code goes here
-```
-- Add a new key named `title` with the value title of the charactor (you will find in the right side bar) i.e "Lady of Winterfell"
 ```js
 // your code goes here
-````
+```
+
+- Go to this [link](https://awoiaf.westeros.org/index.php/List_of_characters) and choose any charactor you like and click on the link. For example [Arya Stark](https://awoiaf.westeros.org/index.php/Arya_Stark)
+
+```js
+// your code goes here
+```
+
+- Re-assign the value of `charator` variable to and object with the key `charatorName` and value of the first name of your charactor. example "Arya"
+
+```js
+// your code goes here
+```
+
+- A variable named `age` is predeined to 20. Add a new key named `character-age` with the value of age variable.
+
+```js
+let age = 20;
+// your code goes here
+```
+
+- Add a new key named `sur name` with the vlaue of the surname of the cahractor i.e "Stark"
+
+```js
+// your code goes here
+```
+
+- Add a new key named `title` with the value title of the charactor (you will find in the right side bar) i.e "Lady of Winterfell"
+
+```js
+// your code goes here
+```
 
 - Add another property named `greet` and value should be a function when called should alert `I am [NAME HERE] and my title is [TITLE HERE]`.
 
@@ -66,6 +90,36 @@ Follow the instruction and write code just below the instruction.
 ```
 
 - Write a `for..in` loop to log the all the key value pair seperated by `-` like `charactorName - Arya`.
+
+```js
+// your code goes here
+```
+
+- Using the function `console.log log` the value of the key `42`.
+
+```js
+// your code goes here
+```
+
+- Add a key in your object with the value of the variable `city`. The value of the key should be `true`.
+
+```js
+// your code goes here
+```
+
+```js
+var city = prompt("Enter the city name you visited las time.");
+
+// your code goes here
+```
+
+- Uisng console.log log the value of the key defined above.
+
+```js
+// your code goes here
+```
+
+-. Can you define a key of `let or var` in any object? Reason.
 
 ```js
 // your code goes here

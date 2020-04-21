@@ -39,6 +39,7 @@ console.log(username.name); // "Arya"
 ```
 
 Using **DOT NOTATION** you can access the value of any key in object by specifying the name of the object (`username`) followed by `.` (dot notation), followed by the name of the key liek `username.name`.
+//FEEDBACK : liek typo 
 
 While using `Dot Notation` you key value can only be **alphanumeric** (including `_` and `$`). Key name can't start with number.
 
@@ -134,7 +135,11 @@ Convert all of the above code to do the same using bracket notation.
 ```js
 //1. add new key called surname and value "Stark"
 //2. re-assign the value of surname key to "Noone"
-//3. delete the key anem surname
+//3. delete the key anem surname  
+username.surname = "Stark"
+username.surname = "Noone"
+delete username.surname
+
 ```
 
 ## Array-readText

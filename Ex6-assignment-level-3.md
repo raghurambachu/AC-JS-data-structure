@@ -11,6 +11,9 @@ console.log(user.name);
 - Is the code above is valid or invalid.
 - Can we change the variable defined with const. Explain with reason.
 - What will be the output and why?
+// Code is valid.
+// We cannot reassign the variable defined with const, but if an object is defined with const, we can reassign it's properties that is key : value
+//Output : "Sansa" , the value has been reassigned.
 
 ## writeTextAnswer
 
@@ -24,6 +27,10 @@ let b = y;
 ```
 
 Answer:
+//a : 10
+//b : "abc"
+//x : 10
+//y : "abc"
 
 ---
 
@@ -39,6 +46,10 @@ b = "def";
 ```
 
 Answer:
+// a : 5
+// b : "def"
+// x : 10
+// y : "abc"
 
 ---
 
@@ -51,6 +62,8 @@ arr.push(2);
 ```
 
 Answer:
+// arr = [1, 2]
+// arrCopy = [1, 2]
 
 4. What will be the output and explain the reason.
 
@@ -61,17 +74,18 @@ let newObj = { name: "Arya" };
 let user = obj;
 let arr = ["Hi"];
 let arr2 = arr;
+//FEEDBACK : I think arr2 should have been arr1
 ```
 
-- `[10] === [10]`
-- What is the value of obj? // answer
-- `obj == newObj`
-- `obj === newObj`
-- `user === newObj`
-- `user == newObj`
-- `user == obj`
-- `arr == arr1`
-- `arr === arr1`
+- `[10] === [10]` //False
+- What is the value of obj? // answer : obj is { surname: "Stark" };
+- `obj == newObj` //false
+- `obj === newObj`//false
+- `user === newObj`//false
+- `user == newObj` //faslse
+- `user == obj` //true
+- `arr == arr1` //false
+- `arr === arr1`//false
 
 5. What's will be the value of `person1` and `person2` ? Explain with reason.
 
@@ -84,7 +98,9 @@ function personDetails(person) {
 var person1 = { name: "Alex", age: 30 };
 var person2 = personDetails(person1);
 console.log(person1);
+// person1 {name:"Alex",age:25}
 console.log(person2);
+//person2 { name: "John", age: 50 };
 ```
 
 ```js
@@ -94,8 +110,8 @@ var user = {
 };
 user.brothers = brothers;
 brothers.push("Robb");
-console.log(user.brothers === brothers); //1. output
-console.log(brothers.length === brothers.length); //2. output
+console.log(user.brothers === brothers); //1. output true
+console.log(brothers.length === brothers.length); //2. true output
 ```
 
 ## writeCode
@@ -108,6 +124,8 @@ let charactor = {
   sisters: 1,
   brothers: 4
 };
+let cloneCharactorWay1 = {...charactor};
+let cloneCharactorWay2 = Object.assign(charactor);
 ```
 
 ## writeTextAnswer
@@ -132,16 +150,16 @@ let user3 = {
   house: "Stark",
   brothers: ["John", "Bran", "Robb"]
 };
-user.house === user2.house; // output:
-user.house == user2.house; // output:
-user.brothers === user2.brothers; // output:
-user.brothers == user2.brothers; // output:
-user.name == user2.name; // output:
-user.name === user2.name; // output:
-user.brothers == user3.brothers; // output:
-user.brothers === user3.brothers; // output:
-user.house === user2.house; // output
-user.house === user3.house; // output
-user.brothers[0] === user2.brothers[0]; // output
-user.brothers[0] === user3.brothers[0]; // output
+user.house === user2.house; // output: true
+user.house == user2.house; // output: true
+user.brothers === user2.brothers; // output:  true
+user.brothers == user2.brothers; // output: true
+user.name == user2.name; // output: true
+user.name === user2.name; // output:  true
+user.brothers == user3.brothers; // output: false
+user.brothers === user3.brothers; // output:  false
+user.house === user2.house; // output true
+user.house === user3.house; // output true
+user.brothers[0] === user2.brothers[0]; // output  true
+user.brothers[0] === user3.brothers[0]; // output true
 ```
